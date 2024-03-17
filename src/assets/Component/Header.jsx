@@ -9,7 +9,7 @@ const Header = () => {
           <svg className="bi me-2" width="40" height="32">
             <img src={Logo} alt="Logo" className="me-2" style={{ width: "40px" }} />
           </svg>
-          <span className="fs-4" style={{ fontWeight: "bold", fontFamily: "cursive" }}>Postify</span>
+          <span className="fs-4" style={{ fontWeight: "900", fontFamily: "cursive" }}>Postify</span>
         </a>
 
         <ul className="nav nav-pills">

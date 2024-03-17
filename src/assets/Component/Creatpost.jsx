@@ -73,6 +73,7 @@ const Creatpost = () => {
             className="form-control rounded-pill"
             id="userId"
             placeholder="Your User ID"
+            required
           />
         </div>
         <div className="mb-3">
@@ -97,6 +98,7 @@ const Creatpost = () => {
             className="form-control rounded-pill"
             id="reactions"
             placeholder="Enter Number of Reactions"
+            required
           />
         </div>
         <button type="submit" className="btn btn-primary rounded-pill">
