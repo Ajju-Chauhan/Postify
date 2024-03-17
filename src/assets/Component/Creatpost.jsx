@@ -48,6 +48,7 @@ const Creatpost = () => {
             className="form-control rounded-pill"
             id="title"
             placeholder="How are you feeling today..."
+            required
           />
         </div>
         <div className="mb-3">
