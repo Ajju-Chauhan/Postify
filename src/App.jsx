@@ -3,13 +3,14 @@ import Footer from './assets/Component/Footer'
 import Sidebar from './assets/Component/Sidebar'
 import Creatpost from './assets/Component/Creatpost'
 import PostList from './assets/Component/PostList'
-import './App.css'
+import './routes/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
 import PostListProvider from './Stor/post-list-store'
+import { Outlet } from 'react-router-dom'
 
 function App() {
-  const [selectecTab, setSetlectedTad] = useState("Home");
+  
   
 
   return (
@@ -17,12 +18,10 @@ function App() {
     <PostListProvider>
 
     <div className="app-container">
-    <Sidebar selectecTab={selectecTab} setSetlectedTad={setSetlectedTad}/>
+  
     <div className="content">
      <Header/>
-     {selectecTab === "Home"?
-     <Creatpost/>:
-     <PostList/>}
+     <Outlet/>
      <Footer/>
     </div>
     </div>
@@ -33,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -24,3 +24,10 @@
 .spinner{
   margin: 10% 0;
 }
+
+  .footer {
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    width: 100%;
+  }
+  
